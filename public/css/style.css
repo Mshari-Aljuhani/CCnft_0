@@ -1,0 +1,112 @@
+.m-font {
+    font-size: 12px;
+
+}
+.maillist-banner div div p{
+    margin: 0;
+}
+.maillist-banner div i:hover{
+    color: black;
+}
+.maillist-banner div i{
+    position: absolute;    
+    right: 25px;
+    font-size: 25px;
+    top: 0px;
+    color: rgb(76, 76, 77);
+}
+.maillist-banner div div{
+   
+    align-items: center;
+    justify-items: center;
+}
+.maillist-banner div{
+    padding: 10px;
+}
+.maillist-banner input{
+    padding: 2px 20px;
+    margin-right: 30px;
+    outline: none;
+    border-width:0.5px;
+    border-color: black;
+    width: 50%;
+}
+.maillist-banner button{
+    outline: none;
+    border: none;
+    color: white;
+    background: black;
+    padding: 4px 0;
+    width: 80%;
+}
+.maillist-banner.active{ 
+    display: block;
+}  
+.maillist-banner{   
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    display: none;
+}
+
+
+/* cookie container */
+.cookie_container{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+}
+.c-ptag, .c-link , .c-btn{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.c-btn button{
+    outline: none;
+    border: none;
+    color: white;
+    background: black;
+    padding: 4px 0;
+    width: 80%;
+
+}
+@media only screen and (max-width: 992px) {
+    .maillist-banner .row div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px;
+    }
+    .maillist-banner .row div:nth-child(2){
+        justify-content: flex-start !important;
+
+    }
+    .maillist-banner button{
+        width: 60%;
+        
+    }
+}
+@media only screen and (max-width: 768px) {
+    .maillist-banner div div p {       
+        justify-content: center;
+        display: flex;
+    }
+    .maillist-banner .row div:nth-child(2){
+        justify-content: center !important;
+
+    }
+    .maillist-banner input {
+        width: 230px ;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .maillist-banner input {
+        width: 150px ;
+    }
+}
