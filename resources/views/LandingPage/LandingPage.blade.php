@@ -13,8 +13,8 @@
             <div class="row ">
                 <form name="ajax-contact-form" id="ajax-contact-form" action="{{route('store.email')}}" method="post" >
                     @csrf
-                    <div class="col-sm-12 col-md-12 col-lg-5  justify-content-center">
-                        <p class="m-font fontThin">JOIN OUR MAILLING LIST TO GET THE LASTEST UPDATES.</p>
+                    <div class="col-sm-12 col-md-12F col-lg-5  justify-content-center">
+                        <p class="m-font fontThin">JOIN OUR MAILING LIST TO GET THE LATEST UPDATES.</p>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4  d-flex justify-content-end">
                         <input id="email" class="m-font emailInput" type="email" name="email" placeholder="EMAIL ADDRESS">
@@ -244,7 +244,7 @@
                     type: "POST",
                     data: $('#ajax-contact-form').serialize(),
                     success: function( response ) {
-                        $('#submit').html('The email sent successfully');
+                        $('#submit').html('THANK YOU FOR JOINING US');
                         document.getElementById('email').style.display = 'none';
                         document.getElementById('submit').style.backgroundColor = '#22c124'
                         $("#submit"). attr("disabled", true);
