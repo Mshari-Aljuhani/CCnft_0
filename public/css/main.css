@@ -1045,9 +1045,13 @@ section {
 .e-ptag {
   white-space: nowrap;
 }
+#maillist-banner{
+    background-color: white;
+    min-width: 100%;
+    margin-left: -12px;
+}
 .maillist-banner div div p {
   margin: 0;
-  margin-left: 50px;
 }
 .maillist-banner div i:hover {
   color: black;
@@ -1056,7 +1060,7 @@ section {
   position: absolute;
   right: 25px;
   font-size: 25px;
-  top: 0px;
+  top: 0;
   color: rgb(76, 76, 77);
 }
 .maillist-banner div div {

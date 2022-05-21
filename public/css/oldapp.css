@@ -14,12 +14,12 @@
 .socialmedia{
     width: 100%;
     height: auto;
-    max-height: 35px;
+    max-height: 30px;
 }
 .discord{
     width: 90%;
     height: auto;
-    max-height: 35px;
+    max-height: 29px;
 }
 .icon{
 
@@ -33,14 +33,16 @@
 #myVideo{
     text-align: center;
     width: auto;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 150px;
+    max-height: 150px;
 }
 @media only screen and (max-width: 600px) {
 
 }
 @media only screen and (max-width: 430px) {
     #myVideo{
+        min-height: 140px;
+        max-height: 140px;
         padding-bottom: 50px;
     }
     .myLogo{
@@ -108,7 +110,7 @@
 }
 
 /* cookies popup */
-.myPopup .myA {
+.myPopup a {
   position: relative;
   padding: 15px 30px;
 }
@@ -117,12 +119,12 @@
   text-align: center;
   margin-right: 40px;
 }
-.myPopup .myA i {
+.myPopup i {
   font-size: 30px;
   color: gray;
 }
 
-.myPopup .myA:before {
+.myPopup .a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -145,7 +147,7 @@
 
 @media (max-width: 420px) {
     .myPopup{
-      margin-right: 0px;
+      margin-right: 0;
     }
     .myPopup {
       padding: 5px 10px;
@@ -188,7 +190,7 @@
 #videoBG2 {
 display: none;
 }
-@media (max-aspect-ratio: 16/9) {
+@media (max-width: 900px) {
     .teaser-cont{
     }
     #videoBG{
