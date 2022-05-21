@@ -317,7 +317,6 @@ section {
 --------------------------------------------------------------*/
 
 .navbar {
-  padding: 0;
   max-height: 217px !important;
 }
 .navbar ul {
@@ -359,7 +358,7 @@ section {
   color: var(--color-primary);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
     .navbar a,
     .navbar a:focus {
         display: flex;
@@ -378,6 +377,24 @@ section {
     .navbar a:focus img {
         font-size: 12px;
         line-height: 0;
+    }
+}
+@media (max-width: 500px) {
+    .navbar .iconsContainer {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        transition: 0.5s;
+        position: relative;
+
+    }
+    .navbar a img,
+    .navbar a:focus img {
+        padding-left: 5vw;
+        font-size: 12px;
     }
 }
 /*--------------------------------------------------------------
@@ -1220,3 +1237,4 @@ section {
 
     }
 }
+

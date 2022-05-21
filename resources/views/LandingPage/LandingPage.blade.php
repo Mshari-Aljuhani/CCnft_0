@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @include("LandingPage.components.head")
+    <div class="teaser-cont">
+        <video  id="videoBG"  autoplay muted loop>
+            <source src="{{asset('video/teaser1.mp4')}}" type="video/mp4">
+        </video>
+        <video  id="videoBG2"  autoplay muted loop>
+            <source src="{{asset('video/teaser2.mp4')}}" type="video/mp4">
+        </video>
+    </div>
 <body class="container-fluid">
-<div>
     @include('LandingPage.components.header')
-</div>
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 <div id="preloader"></div>
