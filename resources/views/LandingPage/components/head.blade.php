@@ -14,6 +14,13 @@
     <link href="{{ asset("font/ABChanelCouture-Light.ttf")}}" rel="stylesheet">
     <link href="{{ asset("font/HelveticaNeue-Thin.ttf")}}" rel="stylesheet">
     <!-- Vendor CSS Files -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <style>
+        .error{
+            color: #FF0000;
+        }
+    </style>
 
     <!-- Vendor CSS Files -->
 

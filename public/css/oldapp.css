@@ -17,9 +17,12 @@
     max-height: 35px;
 }
 .iconsContainer{
+    align-content: center;
+    float: right;
     width: 100%;
     height: auto;
     padding-bottom: 120px;
+    margin: 0 auto;
 }
 @media (max-width: 280px) {
     .iconsContainer{
@@ -34,8 +37,8 @@
 
 #myVideo{
     width: 100%;
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 200px;
+    max-height: 200px;
 }
 /*Fonts*/
 .fontTitle{
@@ -49,12 +52,13 @@
     font-family:Neutra-Display-Thin;
 }
 #confirm-choices{
-    word-wrap: break-word; 
-    white-space: pre-line; 
+    word-wrap: break-word;
+    white-space: pre-line;
 }
 .emailInput{
     border-style: solid;
     border-width: 5px;
+    display: block;
   }
 .privacyTitle{
     width: 100%;
@@ -105,3 +109,18 @@
     }
   }
 /* END cookies popup */
+form{
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    width: 100%;
+}
+.status{
+    color: #20c997;
+    font-size: 1.5rem;
+    margin-top: 4px;
+    margin-right: 10px;
+    text-align: center;
+    display: none;
+    font-weight: bold;
+}

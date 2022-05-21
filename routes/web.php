@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[PageController::class,'LandingPage']);
+Route::post('/saveEmail',[EmailController::class,'store'])->name('store.email');
+
 Route::get('/welcome',[HomeController::class,'index']);
 
 

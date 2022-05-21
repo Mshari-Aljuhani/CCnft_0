@@ -9,14 +9,14 @@
     color: black;
 }
 .maillist-banner div i{
-    position: absolute;    
+    position: absolute;
     right: 25px;
     font-size: 25px;
     top: 0px;
     color: rgb(76, 76, 77);
 }
 .maillist-banner div div{
-   
+
     align-items: center;
     justify-items: center;
 }
@@ -39,10 +39,10 @@
     padding: 4px 0;
     width: 80%;
 }
-.maillist-banner.active{ 
+.maillist-banner.active{
     display: block;
-}  
-.maillist-banner{   
+}
+.maillist-banner{
     border-top: 1px solid;
     border-bottom: 1px solid;
     position: fixed;
@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .c-btn button{
     outline: none;
@@ -81,7 +81,7 @@
     .maillist-banner .row div:nth-child(3){
         display: flex;
         justify-content: center;
-        padding: 5px 0px;
+        padding: 5px 0;
     }
     .maillist-banner .row div:nth-child(2){
         justify-content: flex-start !important;
@@ -89,11 +89,11 @@
     }
     .maillist-banner button{
         width: 60%;
-        
+
     }
 }
 @media only screen and (max-width: 768px) {
-    .maillist-banner div div p {       
+    .maillist-banner div div p {
         justify-content: center;
         display: flex;
     }

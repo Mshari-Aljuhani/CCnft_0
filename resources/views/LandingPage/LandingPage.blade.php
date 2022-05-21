@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @include("LandingPage.components.head")
-<body>
+<body class="container-fluid">
+<div>
     @include('LandingPage.components.header')
-
+</div>
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
-
 <div id="preloader"></div>
     <div id="maillist-banner" class="maillist-banner m-index">
         <div class="container-fluid">
             <div class="row ">
-                <div class="col-sm-12 col-md-6 col-lg-5  justify-content-center">
+                <form name="ajax-contact-form" id="ajax-contact-form" action="{{route('store.email')}}" method="post" >
+                    @csrf
+                    <div class="col-sm-12 col-md-6 col-lg-5  justify-content-center">
                     <p class="m-font fontThin">JOIN OUR MAILLING LIST TO GET THE LASTEST UPDATES.</p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4  d-flex justify-content-end">
-                    <input class="m-font emailInput" type="email" name="email" placeholder="EMAIL ADDRESS">
+                    <div class="col-sm-12 col-md-6 col-lg-4  d-flex justify-content-end">
+                    <input id="email" class="m-font emailInput" type="email" name="email" placeholder="EMAIL ADDRESS">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3  ">
+                    <button id="submit" class="m-font fontThin" type="submit">JOIN NOW</button>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-3  ">
-                    <button class="m-font fontThin">JOIN NOW</button>
-                </div>
+                </form>
             </div>
             <i class="m-close bi bi-x"></i>
         </div>
@@ -55,8 +58,7 @@
                 <div class="col-6 ps-xs-5 ">
                     <div class="nav flex-column nav-pills me-3 myPopup" id="v-pills-tab" role="tablist"
                          aria-orientation="vertical"
-                         style="  text-align: left;
-                            display:inlin">
+                         style="text-align: left; display:inline">
 
                         <a class="modal_btn nav-link active fontTitle myA" id="your-privacy-tab" data-bs-toggle="pill"
                            data-bs-target="#your-privacy" type="button" role="tab" aria-controls="your-privacy"
@@ -212,6 +214,46 @@
 
 </div>
 @include("LandingPage.components.scripts")
+<script>
+    if ($("#email").length > 0) {
+        $("#ajax-contact-form").validate({
+            rules: {
+                email: {
+                    required: true,
+                    maxlength: 50,
+                    email: true,
+                },
+            },
+            messages: {
+                email: {
+                    required: "Please enter valid email",
+                    email: "Please enter valid email",
+                    maxlength: "The email name should less than or equal to 50 characters",
+                },
+            },
+            submitHandler: function(form) {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $('#submit').html('Please Wait...');
+                $("#submit"). attr("disabled", true);
+                $.ajax({
+                    url: "{{url('saveEmail')}}",
+                    type: "POST",
+                    data: $('#ajax-contact-form').serialize(),
+                    success: function( response ) {
+                        $('#submit').html('The email sent successfully');
+                        document.getElementById('email').style.display = 'none';
+                        document.getElementById('submit').style.backgroundColor = '#22c124'
+                        $("#submit"). attr("disabled", true);
+                    }
+                });
+            }
+        })
+    }
+</script>
 </body>
 
 </html>
