@@ -7,8 +7,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{asset(" img/favicon.png")}}" rel="icon">
-    <link href="{{asset(" img/favicon.png")}}" rel="apple-touch-icon">
+    <link rel="icon" href="{{ url('video/favicon.mp4') }}">
 
     <!-- Fonts -->
     <link href="{{ asset("font/ABChanelCouture-Light.ttf")}}" rel="stylesheet">

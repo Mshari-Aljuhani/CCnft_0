@@ -256,7 +256,7 @@ section {
 # Desktop Nav
 --------------------------------------------------------------*/
 
-.navlink a {
+.navlink .navA {
   position: relative;
   padding: 1% 5%;
 }
@@ -273,7 +273,7 @@ section {
   text-align: center;
   margin-right: 40px;
 }
-.navlink a i {
+.navlink .navA i {
   font-size: 30px;
   color: gray;
 }

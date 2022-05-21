@@ -14,31 +14,40 @@
 .socialmedia{
     width: 100%;
     height: auto;
+    max-height: 45px;
+}
+.discord{
+    width: 100%;
+    height: auto;
     max-height: 35px;
 }
 .iconsContainer{
+    padding-left: 200px;
+    text-align: center;
     align-content: center;
-    float: right;
     width: 100%;
     height: auto;
     padding-bottom: 120px;
-    margin: 0 auto;
 }
-@media (max-width: 280px) {
-    .iconsContainer{
-    padding-bottom: 15vw;
-    }
-    }
-@media (max-width: 600px) {
-    .iconsContainer{
-    padding-bottom: 15vw;
+@media only screen and (max-width: 850px) {
+    .iconsContainer {
+        padding-left: 100px;
     }
 }
-
+@media only screen and (max-width: 650px) {
+        .iconsContainer{
+            padding-left: 0;
+        }
+}
 #myVideo{
     width: 100%;
     min-height: 200px;
     max-height: 200px;
+}
+@media only screen and (max-width: 430px) {
+    #myVideo{
+    padding-bottom: 50px;
+    }
 }
 /*Fonts*/
 .fontTitle{
@@ -123,4 +132,12 @@ form{
     text-align: center;
     display: none;
     font-weight: bold;
+}
+.myHeader{
+    padding-left:100px
+}
+@media (max-width: 660px) {
+    .myHeader{
+        padding-left:0
+    }
 }
