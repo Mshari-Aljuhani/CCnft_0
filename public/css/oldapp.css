@@ -118,12 +118,7 @@
     }
   }
 /* END cookies popup */
-form{
-    display: flex;
-    flex-flow: row;
-    height: 100%;
-    width: 100%;
-}
+
 .status{
     color: #20c997;
     font-size: 1.5rem;

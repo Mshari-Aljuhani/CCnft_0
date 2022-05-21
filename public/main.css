@@ -278,7 +278,7 @@ section {
   color: gray;
 }
 
-.navlink .navA:before {
+.navlink a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -291,11 +291,11 @@ section {
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-.navlink .navA:hover:before {
+.navlink a:hover:before {
   visibility: visible;
   transform: scaleX(0.7);
 }
-.navlink .navA:hover {
+.navlink a:hover {
   color: var(--color-primary);
 }
 
@@ -307,7 +307,7 @@ section {
   .navlink{
     margin-right: 0px;
   }
-  .navlink .navlink-inline .navA {
+  .navlink .navlink-inline a {
     padding: 5px 10px;
   }
 }
@@ -1155,53 +1155,34 @@ section {
 }
 
 @media only screen and (max-width: 1280px) {
-    .maillist-banner{
-        padding-top: 10px;
-    }
   .modal-content {
-    width: 100%;
+    width: 55%;
   }
 }
-@media only screen and (min-width: 992px) {
-    form{
-        display: flex;
-        flex-flow: row;
-        height: 100%;
-        width: 100%;
-    }
-}
 @media only screen and (max-width: 992px) {
-    form{
-        display: flex;
-        flex-flow: column;
-        height: 100%;
-        width: 100%;
-    }
-
-    .maillist-banner .row div:nth-child(3) {
+  .maillist-banner .row div:nth-child(3) {
     display: flex;
     justify-content: center;
+    padding: 5px 0px;
   }
-    .maillist-banner input {
-        width: 100%;
-    }
-  .maillist-banner .row div:nth-child(3) {
-    justify-content: center !important;
+  .maillist-banner .row div:nth-child(2) {
+    justify-content: flex-start !important;
   }
   .maillist-banner button {
-    width: 100%;
+    width: 60%;
+  }
+
+  .c-ptag p {
+    margin: 0;
+  }
+  .c-btn {
+    padding: 20px;
   }
   .modal-content {
-    width: 100%;
-  }
-  form{
-      align-content: center;
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
+    width: 70%;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .maillist-banner div div p {
     justify-content: center;
     display: flex;
@@ -1211,16 +1192,52 @@ section {
     justify-content: center !important;
   }
   .maillist-banner input {
-    width: 100%;
+    width: 230px;
   }
   .modal-content {
-    width: 100%;
+    width: 80%;
   }
 }
-@media only screen and (max-width: 430px) {
-    .maillist-banner {
-    padding-top:25px;
-    padding-bottom:15px
-
-    }
+@media only screen and (max-width: 575px) {
+  .c-btn button {
+    width: 50%;
+  }
+  .c-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .c-link {
+    margin: 3px;
+    padding: 3px;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .c-ptag p {
+    margin: 0;
+  }
+  .maillist-banner input {
+    width: 150px;
+  }
+  .modal-content {
+    width: 95%;
+  }
+  .modal_btn {
+    font-size: 10px;
+  }
+  .modal-content div {
+    padding: 3px;
+  }
+  .modal-head p::after {
+    top: 10px;
+  }
+  .modal-p {
+    font-size: 10px;
+  }
+  .modal-btn button {
+    width: 80%;
+    white-space: nowrap;
+  }
 }

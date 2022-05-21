@@ -13,15 +13,15 @@
             <div class="row ">
                 <form name="ajax-contact-form" id="ajax-contact-form" action="{{route('store.email')}}" method="post" >
                     @csrf
-                    <div class="col-sm-12 col-md-6 col-lg-5  justify-content-center">
-                    <p class="m-font fontThin">JOIN OUR MAILLING LIST TO GET THE LASTEST UPDATES.</p>
-                </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4  d-flex justify-content-end">
-                    <input id="email" class="m-font emailInput" type="email" name="email" placeholder="EMAIL ADDRESS">
+                    <div class="col-sm-12 col-md-12 col-lg-5  justify-content-center">
+                        <p class="m-font fontThin">JOIN OUR MAILLING LIST TO GET THE LASTEST UPDATES.</p>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-3  ">
-                    <button id="submit" class="m-font fontThin" type="submit">JOIN NOW</button>
-                </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4  d-flex justify-content-end">
+                        <input id="email" class="m-font emailInput" type="email" name="email" placeholder="EMAIL ADDRESS">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <button id="submit" class="m-font fontThin" type="submit">JOIN NOW</button>
+                    </div>
                 </form>
             </div>
             <i class="m-close bi bi-x"></i>
