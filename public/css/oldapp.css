@@ -14,39 +14,69 @@
 .socialmedia{
     width: 100%;
     height: auto;
-    max-height: 45px;
+    max-height: 35px;
 }
 .discord{
-    width: 100%;
+    width: 95%;
     height: auto;
     max-height: 35px;
 }
+.icon{
+
+}
 .iconsContainer{
-    padding-left: 200px;
-    text-align: center;
-    align-content: center;
     width: 100%;
     height: auto;
     padding-bottom: 120px;
 }
-@media only screen and (max-width: 850px) {
-    .iconsContainer {
-        padding-left: 100px;
-    }
-}
-@media only screen and (max-width: 650px) {
-        .iconsContainer{
-            padding-left: 0;
-        }
-}
+
 #myVideo{
     width: 100%;
     min-height: 200px;
     max-height: 200px;
 }
+@media only screen and (max-width: 600px) {
+
+}
 @media only screen and (max-width: 430px) {
     #myVideo{
     padding-bottom: 50px;
+    }
+}
+
+.myNav a {
+    position: relative;
+    padding: 1% 5%;
+}
+
+.myNav {
+    display: inline-block !important;
+    text-align: center;
+    margin-right: 40px;
+}
+.myNav a i {
+    font-size: 30px;
+    color: gray;
+}
+.myNav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+@media (max-width: 420px) {
+    .myNav{
+        margin-right: 0px;
+    }
+    .myNav a {
+        padding: 5px 10px;
     }
 }
 /*Fonts*/

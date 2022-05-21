@@ -30,15 +30,15 @@
 <div id="cookie_container" class=" cookie_container c-index">
     <div class="container-fluid d-flex ">
         <div class="row">
-            <div class=" c-ptag col-sm-6 col-lg-6">
+            <div class=" c-ptag col-sm-8 col-lg-6 col-xs-12">
                 <p class="fontThin">BY CLICKING "ACCEPT ALL COOKIES", YOU AGREE TO THE STORING OF COOKIES TO ENHANCE SITE NAVIGATION,
                     ANALYZE
                     SITE USAGE, AND ASSIST IN OUR MARKETING EFFORTS. CLICK TO LEARN MORE.</p>
             </div>
             <div class="c-link col-sm-2 col-lg-2">
-                <a class="btnc fontThin" id="modal_btn">COOKIES SETTINGS</a>
+                <a class="btnc fontThin mx-auto" id="modal_btn">COOKIES SETTINGS</a>
             </div>
-            <div class="c-btn col-sm-4 col-lg-4 fontThin">
+            <div class="c-btn col-sm-12 col-lg-4 fontThin ps-sm-3">
                 <button id="cookie_btn">ACCEPT ALL COOKIES</button>
             </div>
         </div>
