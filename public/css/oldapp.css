@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Neutra-Display-Titling";
-    src: url("../font/Neutra\ Display\ Titling.otf") format('truetype');
+    src: url("../font/NeutraText-BoldSC.otf") format('truetype');
 }
 @font-face {
     font-family: "Neutra-Display-Light";
-    src: url("../font/Neutra\ Display\ Light.otf") format('truetype');
+    src: url("../font/NeutraText-book.otf") format('truetype');
 }
 @font-face {
     font-family: "Neutra-Display-Thin";
-    src: url("../font/Neutra\ Display\ Thin.otf") format('truetype');
+    src: url("../font/NeutraText-Demi.otf") format('truetype');
 }
 
 .socialmedia{
