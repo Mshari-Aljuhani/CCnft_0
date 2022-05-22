@@ -16,13 +16,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/',[PageController::class,'LandingPage']);
-Route::post('/saveEmail',[EmailController::class,'store'])->name('store.email');
-
-Route::get('/welcome',[HomeController::class,'index']);
-
-
 Auth::routes();
 
+Route::get('/',[PageController::class,'LandingPage']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/saveEmail',[EmailController::class,'store'])->name('store.email');
+Route::resource('email', EmailController::class);
+
+

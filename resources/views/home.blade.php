@@ -10,6 +10,7 @@
                     <th scope="col">#</th>
                     <th class="table-dark">Emails</th>
                     <th class="table-dark">Send at</th>
+                    <th class="table-dark">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,6 +19,13 @@
                         <th scope="row">{{$email->id}}</th>
                         <td>{{$email->email}}</td>
                         <td>{{$email->created_at}}</td>
+                        <td>
+                            <form action="{{route('email.destroy', $email)}}" method="post">
+                                @method("DELETE")
+                                @csrf
+                                <button class="btn btn-danger" onclick="return confirm('Delete {{$email->email}} ? ')" >Delete</button>
+                            </form>
+                        </td>
                 </tr>
             @endforeach
             </tbody>

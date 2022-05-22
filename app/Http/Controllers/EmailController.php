@@ -82,10 +82,11 @@ class EmailController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Email  $email
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Email $email)
     {
-        //
+        $email->delete();
+        return redirect()->back()->with('status', "Email deleted successfully");
     }
 }
