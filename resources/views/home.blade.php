@@ -3,7 +3,10 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <h2 class="mb-5" style="text-align: center; color: white">Subscribers emails: {{$emails->count()}} </h2>
+        <h2 class="mb-3" style="text-align: center; color: white">Subscribers emails: {{$emails->count()}} </h2>
+        <div class="mb-3" style="text-align: center">
+            <a class="btn btn btn-outline-success" href="{{route('exportEmails')}}">Download emails list</a>
+        </div>
         <table class="table table-dark table-striped table-hover">
             <thead>
                 <tr class="table-dark">

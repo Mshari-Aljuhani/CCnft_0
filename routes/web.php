@@ -23,5 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::post('/saveEmail',[EmailController::class,'store'])->name('store.email');
 Route::resource('email', EmailController::class);
+Route::get('/exportEmails',[EmailController::class,'exportEmails'])->name('exportEmails');
 
 

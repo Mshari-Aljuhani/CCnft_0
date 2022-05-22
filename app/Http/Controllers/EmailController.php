@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\EmailsExport;
+use App\Exports\OrdersExport;
 use App\Models\Email;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Maatwebsite\Excel\Excel;
 
 class EmailController extends Controller
 {
@@ -88,5 +92,12 @@ class EmailController extends Controller
     {
         $email->delete();
         return redirect()->back()->with('status', "Email deleted successfully");
+    }
+
+    public function exportEmails(){
+        if (Auth::id() > 1) {
+            return abort(401);}
+
+        return (new EmailsExport())->download( 'Emailslist'.date('Y-m-d').'.xlsx');
     }
 }
