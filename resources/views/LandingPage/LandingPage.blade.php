@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @include("LandingPage.components.head")
     <div class="teaser-cont">
-        <video  id="videoBG"  autoplay muted loop>
+        <video  id="videoBG"  autoplay muted loop playsinline>
             <source src="{{asset('video/teaser1.mp4')}}" type="video/mp4">
         </video>
     </div>
@@ -21,7 +21,7 @@
                         <p class="m-font fontThin">JOIN OUR MAILING LIST TO GET THE LATEST UPDATES.</p>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4  d-flex justify-content-end">
-                        <input id="email" class="m-font emailInput" type="email" name="email" placeholder="EMAIL ADDRESS">
+                        <input id="email" class="m-font emailInput" type="email" name="email" placeholder="  EMAIL ADDRESS">
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-3">
                         <button id="submit" class="m-font fontThin" type="submit">JOIN NOW</button>

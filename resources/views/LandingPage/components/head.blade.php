@@ -7,7 +7,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link rel="icon" href="{{ url('favicon.ico') }}">
+    <link rel="icon" href="{{ url('favicon.png') }}">
 
     <!-- Fonts -->
     <link href="{{ asset("font/ABChanelCouture-Light.ttf")}}" rel="stylesheet">

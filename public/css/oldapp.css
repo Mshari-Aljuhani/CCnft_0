@@ -21,7 +21,8 @@
     height: auto;
     max-height: 29px;
 }
-.icon{
+#IG{
+    width: 105%;
 
 }
 .iconsContainer{
@@ -36,8 +37,13 @@
     min-height: 150px;
     max-height: 150px;
 }
-@media only screen and (max-width: 600px) {
-
+@media  (max-width: 660px) {
+    #myVideo {
+        float: left;
+    }
+    .iconsContainer {
+        padding-bottom: 80px;
+    }
 }
 @media only screen and (max-width: 430px) {
     #myVideo{
@@ -174,6 +180,7 @@
 }
 .teaser-cont{
     display: flex;
+    top: 0;
     min-height: 100vh;
     min-width: 100%;
     align-items: center;
@@ -182,6 +189,7 @@
 }
 #videoBG{
     position: fixed;
+    top: 0;
     min-width: 100%;
     min-height: 100%;
 }

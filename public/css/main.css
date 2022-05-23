@@ -1077,7 +1077,7 @@ section {
   outline: none;
   border-width: 0.5px;
   border-color: black;
-  width: 50%;
+  width: 55%;
 }
 .maillist-banner button {
   outline: none;
@@ -1104,6 +1104,8 @@ section {
 /* cookie container */
 .cookie_container.active {
   display: block;
+    right: 0;
+    left: 0;
 }
 .cookie_container div .row {
   width: 100%;
@@ -1112,8 +1114,8 @@ section {
 .cookie_container {
   border-top: 1px solid;
   border-bottom: 1px solid;
-  padding: 5px;
-  position: fixed;
+    padding: 5px;
+    position: fixed;
   bottom: 0;
   width: 100%;
   display: none;
@@ -1167,7 +1169,7 @@ section {
   background: none !important;
   font-size: 14px;
   text-align: left;
-  padding: 10px 0px;
+  padding: 10px 0;
   text-transform: uppercase;
 }
 
@@ -1176,7 +1178,7 @@ section {
         padding-top: 10px;
     }
   .modal-content {
-    width: 100%;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1198,9 +1200,12 @@ section {
     .maillist-banner .row div:nth-child(3) {
     display: flex;
     justify-content: center;
-  }
+    }
     .maillist-banner input {
         width: 100%;
+        padding: 0 ;
+        margin: 0 auto;
+
     }
   .maillist-banner .row div:nth-child(3) {
     justify-content: center !important;
@@ -1209,7 +1214,7 @@ section {
     width: 100%;
   }
   .modal-content {
-    width: 100%;
+    width: 80%;
   }
   form{
       align-content: center;
@@ -1222,16 +1227,20 @@ section {
   .maillist-banner div div p {
     justify-content: center;
     display: flex;
-    margin: 0;
+      width: 100%;
+      padding: 0 ;
+      margin: 0 auto
   }
   .maillist-banner .row div:nth-child(2) {
     justify-content: center !important;
   }
   .maillist-banner input {
-    width: 100%;
+    width: 100vw;
+      padding: 0 ;
+      margin: 0 auto;
   }
   .modal-content {
-    width: 100%;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 430px) {
