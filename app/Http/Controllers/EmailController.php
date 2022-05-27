@@ -45,7 +45,6 @@ class EmailController extends Controller
         $email = Email::create(['email' => $request->email]);
         $email->save();
         return response()->json(['success' => true]);
-
     }
 
     /**

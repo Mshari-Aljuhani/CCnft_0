@@ -219,6 +219,7 @@
 </div>
 @include("LandingPage.components.scripts")
 <script>
+
     if ($("#email").length > 0) {
         $("#ajax-contact-form").validate({
             rules: {
@@ -251,7 +252,7 @@
                         $('#submit').html('THANK YOU FOR JOINING US');
                         document.getElementById('email').style.display = 'none';
                         document.getElementById('submit').style.backgroundColor = '#22c124'
-                        $("#submit"). attr("disabled", true);
+                        $("#submit").attr("disabled", true);
                     }
                 });
             }
