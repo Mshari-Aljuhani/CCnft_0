@@ -10,10 +10,10 @@
         <div class=" col iconsContainer">
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/charcoalchroniclesnft/" target="_blank"> <img id="IG" class="socialmedia" src="{{asset('img/IG (1).ico')}}" alt="IG"/> </a>
+                    <a href="https://www.instagram.com/charcoalchroniclesnft/" target="_blank"> <img class="socialmedia" src="{{asset('img/IG.png')}}" alt="IG"/> </a>
                 </li>
                 <li>
-                    <a href="https://dsc.gg/charcoal-chronicles-w" target="_blank" ><img class="discord" src="{{asset('img/DISCORD.png')}}" alt="Discord"/></a>
+                    <a href="https://dsc.gg/charcoal-chronicles-w" target="_blank" ><img id="discord" class="socialmedia" src="{{asset('img/DISCORD.png')}}" alt="Discord"/></a>
                 </li>
                 <li>
                     <a href="https://twitter.com/charcoalchronft" target="_blank"><img class="socialmedia" src="{{asset('img/TWITTER.png')}}" alt="Twiiter"/></a>
