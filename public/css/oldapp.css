@@ -12,12 +12,13 @@
 }
 
 .socialmedia{
-    width: 100%;
+    width: auto;
     max-height: 30px;
+    margin-left: 20px;
 }
 .iconsContainer{
     height: auto;
-    width: 100%;
+    width: auto;
     text-align: center;
     padding-bottom: 90px;
 }
@@ -25,8 +26,8 @@
 #myVideo{
     text-align: center;
     width: auto;
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 180px;
+    max-height: 180px;
 }
 @media  (max-width: 770px) {
     .container-fluid.row{
@@ -41,20 +42,22 @@
         position: absolute;
         top:10px;
         left:0;
+        right: 0;
         text-align: right;
         justify-items: right;
-        align-items: flex-start;
+        align-items: flex-end;
         padding-bottom: 120px;
         }
     .socialmedia{
         max-height: 25px;
-        width: 100%;
+        width: auto;
     }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 451px) {
     #myVideo{
         min-height: 165px;
         max-height: 165px;
+        margin:0;
         padding-bottom: 50px;
     }
     .myLogo{
@@ -62,6 +65,7 @@
     }
     .socialmedia{
         max-height: 25px;
+        margin-left: 5px;
     }
     #discord{
         max-width: 52px;
@@ -85,7 +89,7 @@
 .myNav a:before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 2px;
     bottom: 0;
     left: 0;
@@ -119,13 +123,13 @@
     white-space: pre-line;
 }
 .emailInput{
-    border-style: solid;
     height: 26px;
-    border-width: 5px;
     display: block;
+    border: 5px solid black;
+    border-radius: 0;
   }
 .privacyTitle{
-    width: 100%;
+    width: auto;
 }
 
 /* cookies popup */
@@ -146,7 +150,7 @@
 .myPopup .a:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: auto;
   height: 2px;
   bottom: 0;
   left: 0;
