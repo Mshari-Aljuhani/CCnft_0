@@ -16,7 +16,7 @@
                     <a href="https://dsc.gg/charcoal-chronicles-w" target="_blank" ><img class="discord" src="{{asset('img/DISCORD.png')}}" alt="Discord"/></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/charcoalchronft" target="_blank"><img class="socialmedia" src="{{asset('img/TWITTER.png')}}" alt="Twiiter"/></a>
+                    <a href="https://twitter.com/charcoalchronft" target="_blank"><img id="twitter" class="socialmedia" src="{{asset('img/TWITTER.png')}}" alt="Twitter"/></a>
                 </li>
             </ul>
         </div>

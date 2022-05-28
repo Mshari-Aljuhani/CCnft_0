@@ -63,10 +63,7 @@
         height: auto;
     }
     .discord{
-        width: 88%;
-        height: auto;
-        max-height: 29px;
-
+        max-height: 30px;
     }
 }
 @media only screen and (max-width: 430px) {
@@ -79,10 +76,17 @@
         width: 10%;
     }
     .socialmedia{
-        max-height: 25px;
+        max-height: 28px;
     }
     .discord{
         max-height: 26px;
+    }
+    #IG{
+        max-height: 21.5px;
+    }
+    #twitter{
+        max-height: 29.5px;
+        padding-top: 3px;
     }
 }
 
