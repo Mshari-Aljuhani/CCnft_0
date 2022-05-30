@@ -210,3 +210,21 @@
     min-width: 100%;
     min-height: 100%;
 }
+.myContainer{
+    margin-left: 5%;
+    margin-right: 0.69%;
+}
+.myContainer2{
+    margin-left: 3.15%;
+    margin-right: 3.6%;
+}
+#cookie_btn{
+    width: 84.6%;
+}
+@media only screen and (max-width: 992px) {
+    .myContainer{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+}

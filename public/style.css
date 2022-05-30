@@ -74,7 +74,7 @@
     color: white;
     background: black;
     padding: 4px 0;
-    width: 80%;
+    max-width: 20%;
 
 }
 @media only screen and (max-width: 992px) {

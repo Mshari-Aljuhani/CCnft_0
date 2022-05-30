@@ -14,10 +14,10 @@
 <div id="preloader"></div>
     <div id="maillist-banner" class="maillist-banner m-index">
         <div class="container-fluid">
-            <div class="row ">
+            <div class="row myContainer">
                 <form name="ajax-contact-form" id="ajax-contact-form" action="{{route('store.email')}}" method="post" >
                     @csrf
-                    <div class="col-sm-12 col-md-12F col-lg-5  justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-5  justify-content-center mt-1">
                         <p class="m-font fontThin">JOIN OUR MAILING LIST TO GET THE LATEST UPDATES.</p>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4  d-flex justify-content-end">
@@ -32,9 +32,9 @@
         </div>
     </div>
 <div id="cookie_container" class=" cookie_container c-index">
-    <div class="container-fluid d-flex ">
-        <div class="row">
-            <div class=" c-ptag col-sm-8 col-lg-6 col-xs-12">
+    <div class="container-fluid d-flex">
+        <div class="row myContainer2">
+            <div class=" c-ptag col-sm-10 col-lg-7 col-xs-12 ">
                 <p class="fontThin">BY CLICKING "ACCEPT ALL COOKIES", YOU AGREE TO THE STORING OF COOKIES TO ENHANCE SITE NAVIGATION,
                     ANALYZE
                     SITE USAGE, AND ASSIST IN OUR MARKETING EFFORTS. CLICK TO LEARN MORE.</p>
@@ -42,7 +42,7 @@
             <div class="c-link col-sm-2 col-lg-2">
                 <a class="btnc fontThin mx-auto" id="modal_btn">COOKIES SETTINGS</a>
             </div>
-            <div class="c-btn col-sm-12 col-lg-4 fontThin ps-sm-3">
+            <div class="c-btn col-sm-12 col-lg-3 fontThin">
                 <button id="cookie_btn">ACCEPT ALL COOKIES</button>
             </div>
         </div>

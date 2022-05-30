@@ -198,7 +198,7 @@ section {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0ms !important;
   }
 }
 /*--------------------------------------------------------------
@@ -808,7 +808,6 @@ section {
 .hero-static {
   width: 100%;
   min-height: 50vh;
-  background: url("../img/hero-bg.png") center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
@@ -1033,7 +1032,6 @@ section {
 }
 .maillist-banner div div p {
   margin: 0;
-  margin-left: 50px;
 }
 .maillist-banner div i:hover {
   color: black;
@@ -1102,9 +1100,6 @@ section {
   background: white;
 }
 .c-ptag p {
-  padding: 0 0;
-  margin: 5px 0px;
-  margin-left: 40px;
 }
 .c-link {
   justify-content: end !important;
@@ -1132,13 +1127,13 @@ section {
   color: white;
   background: black;
   padding: 4px 0;
-  width: 100%;
+  max-width: 80%;
 }
 .cookie_x {
   font-size: 27px;
   position: absolute;
   right: 25px;
-  top: 0px;
+  top: 0;
 }
 
 
@@ -1216,7 +1211,6 @@ section {
     align-items: center;
   }
   .c-ptag p {
-    margin: 0;
   }
   .maillist-banner input {
     width: 150px;
