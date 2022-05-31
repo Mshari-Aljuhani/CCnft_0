@@ -33,7 +33,7 @@
 
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/oldapp.css') }}" rel="stylesheet">
 </head>

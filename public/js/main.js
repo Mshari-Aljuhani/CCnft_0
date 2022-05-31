@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!section) return;
 
       let position = window.scrollY;
-      if (navbarlink.hash != '#header') position += 200;
+      if (navbarlink.hash !== '#header') position += 200;
 
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         navbarlink.classList.add('active');
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -143,8 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
- 
-  
+
+
 
   /**
    * Animation on scroll function and init
@@ -171,13 +171,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const cookie_btn = document.querySelector("#cookie_btn");
   const modal_btn = document.getElementById("modal_btn");
   const cookie_model = document.getElementById("cookie_model");
-  
+
 
   const span = document.getElementById("modal_close");
   const confirm_choices = document.getElementById("confirm-choices");
   const allow_all = document.getElementById("allow-all");
 
-  // When the user clicks the button, open the modal 
+  // When the user clicks the button, open the modal
   modal_btn.onclick = function () {
       cookie_model.style.display = "block";
   }
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cookie_container.classList.remove("active");
 
   });
-  
+
   maillist_i.addEventListener("click", () => {
       maillist.classList.remove("active");
 
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.querySelectorAll(".toggle_btn").forEach( ele => {
     ele.addEventListener("input", e => {
-      
+
       if(ele.checked == true)
       {
         ele.classList.add("active");
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
       maillist.classList.add("active");
       if (!localStorage.getItem("cookieAllowed")) {
           cookie_container.classList.add("active");
-          
+
       }
   }, 2000);
 });

@@ -955,7 +955,7 @@ section {
   margin-top: 70px;
 }
 .modal-data div {
-  margin: 30px 0px;
+  margin: 30px 0;
 }
 .modal-btn button:hover {
   background: #c3c3c3;
@@ -974,21 +974,24 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 0px;
+  margin: auto;
+    background-color: white !important;
+    padding: 15px 30px !important;
+
 }
 .modal-head p {
   text-transform: uppercase;
     font-size: 14px;
-    padding-top: 8px;
+    background-color: white !important;
+    padding: 15px 30px !important;
 }
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  margin: 0 auto;
   border: 1px solid #888;
   width: 40%;
   display: block;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 
@@ -1017,7 +1020,7 @@ section {
 }
 .toggle_btn {
   float: right !important;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 .toggle_btn:focus {
   border-color: #9b9898;
@@ -1040,7 +1043,7 @@ section {
   position: absolute;
   right: 25px;
   font-size: 25px;
-  top: 0px;
+  top: 0;
   color: rgb(76, 76, 77);
 }
 .maillist-banner div div {
@@ -1142,10 +1145,11 @@ section {
 }
 .modal_btn {
   color: black !important;
-  background: none !important;
+  background-color: white;
   font-size: 14px;
   text-align: left;
-  padding: 10px 0px;
+  padding: 15px 30px !important;
+
   text-transform: uppercase;
 }
 
@@ -1232,6 +1236,6 @@ section {
   }
   .modal-btn button {
     width: 80%;
-    white-space: nowrap;
+    white-space: break-spaces;
   }
 }

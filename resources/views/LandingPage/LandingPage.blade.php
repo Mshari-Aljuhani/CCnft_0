@@ -64,20 +64,20 @@
                          aria-orientation="vertical"
                          style="text-align: left; display:inline">
 
-                        <a class="modal_btn nav-link active fontTitle " id="your-privacy-tab" data-bs-toggle="pill"
+                        <a class="modal_btn nav-link active fontTitle" id="your-privacy-tab" data-bs-toggle="pill"
                            data-bs-target="#your-privacy" type="button" role="tab" aria-controls="your-privacy"
                            aria-selected="true">Privacy</a>
-                        <a class="modal_btn nav-link fontTitle " id="strictly-necessary-cookies-tab" data-bs-toggle="pill"
+                        <a class="modal_btn nav-link fontTitle mt-3 " id="strictly-necessary-cookies-tab" data-bs-toggle="pill"
                            data-bs-target="#strictly-necessary-cookies" type="button" role="tab"
                            aria-controls="strictly-necessary-cookies" aria-selected="false">Strictly Necessary
                             Cookies</a>
-                        <a class="modal_btn nav-link fontTitle " id="preformance-cookies-tab" data-bs-toggle="pill"
+                        <a class="modal_btn nav-link fontTitle mt-3" id="preformance-cookies-tab" data-bs-toggle="pill"
                            data-bs-target="#preformance-cookies" type="button" role="tab"
                            aria-controls="preformance-cookies" aria-selected="false">Performance Cookies</a>
-                        <a class="modal_btn nav-link fontTitle " id="functional-cookies-tab" data-bs-toggle="pill"
+                        <a class="modal_btn nav-link fontTitle mt-3" id="functional-cookies-tab" data-bs-toggle="pill"
                            data-bs-target="#functional-cookies" type="button" role="tab"
                            aria-controls="functional-cookies" aria-selected="false">Functional Cookies</a>
-                        <a class="modal_btn nav-link fontTitle " id="targeting-cookies-tab" data-bs-toggle="pill"
+                        <a class="modal_btn nav-link fontTitle mt-3 " id="targeting-cookies-tab" data-bs-toggle="pill"
                            data-bs-target="#targeting-cookies" type="button" role="tab"
                            aria-controls="targeting-cookies" aria-selected="false">Targeting Cookies</a>
                     </div>
